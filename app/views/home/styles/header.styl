@@ -1,32 +1,15 @@
 @import 'nib'
 
-.header
-  width: 551px
-  margin: 0 auto
-  padding: 5px
-  font-size: 24px
-  background-color: #fff
-  border-bottom: 2px solid #427684
-  font-weight: 300
-  font-size: 1.25rem
-  line-height: 1.2
+@import 'app/views/styles/variables'
 
-  &-link
-    display: inline-block
-    text-decoration: none
-    color: #3f894a
-    padding: 4px 15px
+#header-container
+  header
+    border-bottom: 2px solid $brand-primary
 
-    &.last-link
-      padding-left: 9px;
+    ul
+      margin: 0
 
-    &:visited
-      color: #3f894a
-
-    &:hover
-      color: #27552e
-      border-color: #27552e
-  ul
-    margin: 5px 0
-  li
-    display: inline
+    li
+      display: inline-block
+      list-style-type: none
+      padding: 1em;

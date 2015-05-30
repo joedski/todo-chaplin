@@ -1,0 +1,27 @@
+@import 'nib'
+
+@import 'app/views/styles/variables'
+
+.tdl-item
+	list-style-type: none
+	padding: $padding-base-vertical $padding-base-horizontal
+
+.tdl-item-toggle
+	float: left
+	margin-right: $padding-base-horizontal
+
+	i
+		opacity: 0
+
+	&:hover, &:active
+		i
+			opacity: 0.3
+	
+	&.tdl-item-toggle-selected
+		i
+			opacity: 1
+
+.tdl-item-title
+	padding: ($padding-base-vertical + 1) ($padding-base-horizontal + 1)
+	font-size: $font-size-base
+	margin: 0
